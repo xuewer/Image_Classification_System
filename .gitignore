@@ -1,0 +1,55 @@
+# Python and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+build/
+dist/
+
+# Secrets, credentials, and private local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+credentials*
+secrets*
+.streamlit/secrets.toml
+.aws/
+.ssh/
+.codex/
+.agents/
+.vscode/
+.idea/
+*.log
+*.sqlite*
+*.db
+*.local
+
+# Keep directory templates, but never publish local datasets or training runs
+/data/**
+!/data/**/
+!/data/**/.gitkeep
+!/data/raw/README.txt
+/outputs/*
+!/outputs/.gitkeep
+/image/
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.parquet
+*.zip
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+Desktop.ini
